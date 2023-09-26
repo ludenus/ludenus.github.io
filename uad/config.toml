@@ -97,22 +97,22 @@ name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
 identifier = "ds"
 url = "https://github.com/McShelby/hugo-theme-relearn"
 weight = 10
-
-[[languages.en.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-camera'></i> Showcases"
-pageRef = "showcase/"
-weight = 11
-
-[[languages.en.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
-weight = 20
-
-[[languages.en.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
-pageRef = "more/credits/"
-weight = 30
+#
+#[[languages.en.menu.shortcuts]]
+#name = "<i class='fas fa-fw fa-camera'></i> Showcases"
+#pageRef = "showcase/"
+#weight = 11
+#
+#[[languages.en.menu.shortcuts]]
+#name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
+#identifier = "hugodoc"
+#url = "https://gohugo.io/"
+#weight = 20
+#
+#[[languages.en.menu.shortcuts]]
+#name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
+#pageRef = "more/credits/"
+#weight = 30
 
 [[languages.en.menu.shortcuts]]
 name = "<i class='fas fa-fw fa-tags'></i> Tags"
@@ -134,27 +134,27 @@ name = "<i class='fab fa-fw fa-github'></i> GitHub репозиторій"
 identifier = "ds"
 url = "https://github.com/McShelby/hugo-theme-relearn"
 weight = 10
-
-[[languages.ua.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-camera'></i> Приклади"
-pageRef = "showcase/"
-weight = 11
-
-[[languages.ua.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bookmark'></i> Документація Hugo"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
-weight = 20
-
-[[languages.ua.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bullhorn'></i> Подяки"
-pageRef = "more/credits/"
-weight = 30
-
-[[languages.ua.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-tags'></i> Таги"
-pageRef = "tags/"
-weight = 40
+#
+#[[languages.ua.menu.shortcuts]]
+#name = "<i class='fas fa-fw fa-camera'></i> Приклади"
+#pageRef = "showcase/"
+#weight = 11
+#
+#[[languages.ua.menu.shortcuts]]
+#name = "<i class='fas fa-fw fa-bookmark'></i> Документація Hugo"
+#identifier = "hugodoc"
+#url = "https://gohugo.io/"
+#weight = 20
+#
+#[[languages.ua.menu.shortcuts]]
+#name = "<i class='fas fa-fw fa-bullhorn'></i> Подяки"
+#pageRef = "more/credits/"
+#weight = 30
+#
+#[[languages.ua.menu.shortcuts]]
+#name = "<i class='fas fa-fw fa-tags'></i> Таги"
+#pageRef = "tags/"
+#weight = 40
 
 # this is ourrr way t' showcase th' multilang settings by
 # doing autotrrranlat'n of th' english content; we are
