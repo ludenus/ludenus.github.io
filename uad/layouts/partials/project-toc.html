@@ -1,0 +1,14 @@
+<ul>
+  {{ range .Site.Pages }}
+  {{ if and (not .Draft) (.Params.showInToc) }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ if .TableOfContents }}
+    <ul>
+      {{ .TableOfContents }}
+    </ul>
+    {{ end }}
+  </li>
+  {{ end }}
+  {{ end }}
+</ul>

@@ -1,7 +1,8 @@
 +++
 archetype = "chapter"
-title = "Вступ"
+title = "Vstup"
 weight = 10
+showInToc = true
 +++
 
 Lorem Ipsum.
