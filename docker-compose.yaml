@@ -1,6 +1,9 @@
   server:
-    image: klakegg/hugo:0.111.3
-    command: server
+    image: klakegg/hugo:0.111.3-pandoc
+    command:
+     - server
+     - --debug
+
     volumes:
       - ".:/src"
     ports:
