@@ -1,6 +1,6 @@
 +++
 archetype = "home"
-title = "Hugo Relearn Theme"
+title = "~"
 +++
 
 A theme for [Hugo](https://gohugo.io/) designed for documentation.
