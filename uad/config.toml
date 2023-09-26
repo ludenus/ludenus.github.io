@@ -26,15 +26,15 @@ theme = "hugo-theme-relearn"
 
 # the main language of this site; also an automatic pirrrate translation is
 # available in this showcase
-languageCode = "en-us"
+languageCode = "ua"
 # make sure your defaultContentLanguage is the first one in the [languages]
 # array below, as the theme needs to make assumptions on it
-defaultContentLanguage = "en"
+defaultContentLanguage = "ua"
 # if you want to get rrrid o' ourrr pirrrates nonsense uncomment th' next line
-# disableLanguages = ['pir']
+disableLanguages = ['pir']
 
 # the site's title of this showcase; you should change this ;-)
-title = "Hugo Relearn Documentation"
+title = "~"
 
 [outputs]
 # add JSON to the home to support Lunr search; This is a mandatory setting
@@ -83,7 +83,7 @@ X-UA-Compatible = "IE=edge"
 # your project
 [languages]
 [languages.en]
-title = "Hugo Relearn Theme"
+title = "~"
 weight = 1
 languageName = "English"
 # Language dependend settings:
@@ -119,6 +119,43 @@ name = "<i class='fas fa-fw fa-tags'></i> Tags"
 pageRef = "tags/"
 weight = 40
 
+[languages.ua]
+title = "~"
+weight = 1
+languageName = "Українська"
+# Language dependend settings:
+# Use case https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+#contentDir = "content/en"
+[languages.ua.params]
+landingPageName = "<i class='fas fa-home'></i> Головна"
+
+[[languages.ua.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub репозиторій"
+identifier = "ds"
+url = "https://github.com/McShelby/hugo-theme-relearn"
+weight = 10
+
+[[languages.ua.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-camera'></i> Приклади"
+pageRef = "showcase/"
+weight = 11
+
+[[languages.ua.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> Документація Hugo"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
+
+[[languages.ua.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bullhorn'></i> Подяки"
+pageRef = "more/credits/"
+weight = 30
+
+[[languages.ua.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-tags'></i> Таги"
+pageRef = "tags/"
+weight = 40
+
 # this is ourrr way t' showcase th' multilang settings by
 # doing autotrrranlat'n of th' english content; we are
 # lazy and don't supporrt furrrther trrranslations; arrr,
@@ -126,7 +163,7 @@ weight = 40
 # NOT MEANT FER PRRRODUCTION! ARRR!
 
 [languages.pir]
-title = "Cap'n Hugo Relearrrn Theme"
+title = "~"
 weight = 2
 languageName = "Arrr! ☠ Pirrrates ☠"
 # Language dependend settings:

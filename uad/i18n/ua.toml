@@ -1,0 +1,113 @@
+[Reading-direction]
+other = "ltr"
+
+[Search]
+other = "Пошук"
+
+[Search-placeholder]
+other = "Пошук..."
+
+[Clear-search]
+other = "Очистити пошук"
+
+[No-results-found]
+other = "Нічого не знайдено для \"{0}\""
+
+[N-results-found]
+other = "Знайдено {1} результатів для \"{0}\""
+
+[Clear-History]
+other = "Очистити історію"
+
+[Attachments-label]
+other = "Вкладення"
+
+[title-404]
+other = "Не знайдено"
+
+[message-404]
+other = "Ой. Схоже, ця сторінка не існує ¯\\_(ツ)_/¯."
+
+[Go-to-homepage]
+other = "Перейти на головну"
+
+[Edit-this-page]
+other = "Редагувати"
+
+[Print-this-chapter]
+other = "Роздрукувати весь розділ"
+
+[More-action]
+other = "Більше"
+
+[Shortcuts-Title]
+other = "Більше"
+
+[Expand-title]
+other = "Розгорніть мене..."
+
+[Navigation-toggle]
+other = "Меню"
+
+[Toc-toggle]
+other = "Зміст"
+
+[Byte-symbol]
+other = "Б"
+
+[Kilobyte-symbol]
+other = "КБ"
+
+[Megabyte-symbol]
+other = "МБ"
+
+[note]
+other = "Примітка"
+
+[info]
+other = "Інформація"
+
+[tip]
+other = "Порада"
+
+[warning]
+other = "Попередження"
+
+[Copy-to-clipboard]
+other = "Копіювати в буфер обміну"
+
+[Copied-to-clipboard]
+other = "Скопійовано в буфер обміну!"
+
+[Copy-link-to-clipboard]
+other = "Копіювати посилання в буфер обміну"
+
+[Link-copied-to-clipboard]
+other = "Посилання скопійовано в буфер обміну!"
+
+[Chapter]
+other = "Розділ {{.}}"
+
+[Language]
+other = "Мова"
+
+[Theme]
+other = "Тема"
+
+[Submenu]
+other = "Підменю {{.}}"
+
+[Subsections]
+other = "Підрозділи {{.}}"
+
+[tags]
+other = "Теги"
+
+[tag]
+other = "Тег"
+
+[categories]
+other = "Категорії"
+
+[category]
+other = "Категорія"
