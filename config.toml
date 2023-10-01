@@ -45,7 +45,13 @@ home = ["HTML", "RSS", "PRINT", "SEARCH", "SEARCHPAGE"]
 section = ["HTML", "RSS", "PRINT"]
 page = ["HTML", "RSS", "PRINT"]
 
+[security]
+[security.exec]
+allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^pandoc$']
+
 [markup]
+#defaultMarkdownHandler = "pandoc"
+
 [markup.highlight]
 # line numbers in a table layout will shift if code is wrapping, so better
 # not use it; visually both layouts have the same look and behavior
@@ -95,7 +101,7 @@ landingPageName = "<i class='fas fa-home'></i> Home"
 [[languages.en.menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
 identifier = "ds"
-url = "https://github.com/McShelby/hugo-theme-relearn"
+url = "https://github.com/ludenus/ludenus.github.io"
 weight = 10
 #
 #[[languages.en.menu.shortcuts]]
@@ -132,7 +138,7 @@ landingPageName = "<i class='fas fa-home'></i> Головна"
 [[languages.ua.menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub репозиторій"
 identifier = "ds"
-url = "https://github.com/McShelby/hugo-theme-relearn"
+url = "https://github.com/ludenus/ludenus.github.io"
 weight = 10
 #
 #[[languages.ua.menu.shortcuts]]
@@ -175,7 +181,7 @@ landingPageName = "<i class='fas fa-home'></i> Arrr! Home"
 [[languages.pir.menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
 identifier = "ds"
-url = "https://github.com/McShelby/hugo-theme-relearn"
+url = "https://github.com/ludenus/ludenus.github.io"
 weight = 10
 
 [[languages.pir.menu.shortcuts]]
@@ -246,9 +252,9 @@ target = 'static'
 # settings specific to this theme's features; choose to your likings and
 # consult this documentation for explaination
 [params]
-editURL = "https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/"
-description = "Documentation for Hugo Relearn Theme"
-author = "Sören Weber"
+editURL = "https://github.com/ludenus/ludenus.github.io/edit/master/content/"
+description = "Використання систем контролю версій для колективної роботи над мультимедійною документацією"
+author = "A Andreyev"
 showVisitedLinks = true
 collapsibleMenu = true
 disableBreadcrumb = false

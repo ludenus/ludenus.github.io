@@ -3,6 +3,7 @@
     command:
      - server
      - --debug
+     - --templateMetrics
 
     volumes:
       - ".:/src"
