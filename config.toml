@@ -51,6 +51,12 @@ allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^pandoc$']
 
 [markup]
 #defaultMarkdownHandler = "pandoc"
+defaultMarkdownHandler = 'goldmark'
+
+[markup.goldmark]
+[markup.goldmark.extensions]
+#definitionList = true
+footnote = true
 
 [markup.highlight]
 # line numbers in a table layout will shift if code is wrapping, so better
