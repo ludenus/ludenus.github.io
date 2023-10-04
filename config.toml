@@ -127,7 +127,7 @@ landingPageName = "<i class='fas fa-home'></i> Home"
 #weight = 40
 
 [[languages.en.menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> Version 0.0.0"
+name = "<i class='fab fa-fw fa-github'></i> Github 0.0.0"
 url = "https://github.com/ludenus/ludenus.github.io/tree/0000000000000000000000000000000000000000"
 identifier = "gitVersion"
 weight = 100
@@ -143,13 +143,7 @@ languageName = "Українська"
 landingPageName = "<i class='fas fa-home'></i> Головна"
 
 [[languages.ua.menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> GitHub репозиторій"
-identifier = "gitRepo"
-url = "https://github.com/ludenus/ludenus.github.io"
-weight = 10
-
-[[languages.ua.menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> Версія 0.0.0"
+name = "<i class='fab fa-fw fa-github'></i> GitHub 0.0.0"
 url = "https://github.com/ludenus/ludenus.github.io/tree/0000000000000000000000000000000000000000"
 identifier = "gitVersion"
 weight = 100
