@@ -125,11 +125,17 @@ weight = 10
 #name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
 #pageRef = "more/credits/"
 #weight = 30
+#
+#[[languages.en.menu.shortcuts]]
+#name = "<i class='fas fa-fw fa-tags'></i> Tags"
+#pageRef = "tags/"
+#weight = 40
 
 [[languages.en.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-tags'></i> Tags"
-pageRef = "tags/"
-weight = 40
+name = "<i class='fab fa-fw fa-github'></i> Version 0.0.0"
+url = "https://github.com/ludenus/ludenus.github.io"
+identifier = "gitVersion"
+weight = 100
 
 [languages.ua]
 title = "~"
@@ -143,9 +149,16 @@ landingPageName = "<i class='fas fa-home'></i> Головна"
 
 [[languages.ua.menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub репозиторій"
-identifier = "ds"
+identifier = "gitRepo"
 url = "https://github.com/ludenus/ludenus.github.io"
 weight = 10
+
+[[languages.ua.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> Версія 0.0.0"
+url = "https://github.com/ludenus/ludenus.github.io"
+identifier = "gitVersion"
+weight = 100
+
 #
 #[[languages.ua.menu.shortcuts]]
 #name = "<i class='fas fa-fw fa-camera'></i> Приклади"
@@ -167,49 +180,6 @@ weight = 10
 #name = "<i class='fas fa-fw fa-tags'></i> Таги"
 #pageRef = "tags/"
 #weight = 40
-
-# this is ourrr way t' showcase th' multilang settings by
-# doing autotrrranlat'n of th' english content; we are
-# lazy and don't supporrt furrrther trrranslations; arrr,
-# don't take it t' serrrious, fello'; it's prrretty hacky and:
-# NOT MEANT FER PRRRODUCTION! ARRR!
-
-[languages.pir]
-title = "~"
-weight = 2
-languageName = "Arrr! ☠ Pirrrates ☠"
-# Language dependend settings:
-# Use case https://gohugo.io/content-management/multilingual/#translation-by-content-directory
-#contentDir = "content/pir"
-[languages.pir.params]
-landingPageName = "<i class='fas fa-home'></i> Arrr! Home"
-
-[[languages.pir.menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
-identifier = "ds"
-url = "https://github.com/ludenus/ludenus.github.io"
-weight = 10
-
-[[languages.pir.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-camera'></i> Showcases"
-pageRef = "showcase/"
-weight = 11
-
-[[languages.pir.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bookmark'></i> Cap'n Hugo Documentat'n"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
-weight = 20
-
-[[languages.pir.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bullhorn'></i> Crrredits"
-pageRef = "more/credits/"
-weight = 30
-
-[[languages.pir.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-tags'></i> Arrr! Tags"
-pageRef = "tags/"
-weight = 40
 
 # mounts are only needed in this showcase to access the publicly available screenshots;
 # remove this section if you don't need further mounts
