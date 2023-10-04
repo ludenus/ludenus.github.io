@@ -104,11 +104,6 @@ languageName = "English"
 [languages.en.params]
 landingPageName = "<i class='fas fa-home'></i> Home"
 
-[[languages.en.menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
-identifier = "ds"
-url = "https://github.com/ludenus/ludenus.github.io"
-weight = 10
 #
 #[[languages.en.menu.shortcuts]]
 #name = "<i class='fas fa-fw fa-camera'></i> Showcases"

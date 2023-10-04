@@ -9,13 +9,15 @@ services:
        set -x
        which git || apk add git
        
-       sed -i -r "s/(^name = \".*fa-github.*) [0-9]+\.[0-9]+\.[0-9]+[^\"]*\"/\1 `git describe --tags`\"/g" config.toml
-       cat config.toml | grep fa-github
+       cp -f config.toml config.ver.toml
        
-       sed -i -r  "s#(^url = \".*/tree)/[0-9a-f]{40}[^\"]*\"#\1/`git rev-parse HEAD`\"#g" config.toml
-       cat config.toml| grep '/tree/'
+       sed -i -r "s/(^name = \".*fa-github.*) [0-9]+\.[0-9]+\.[0-9]+[^\"]*\"/\1 `git describe --tags`\"/g" config.ver.toml
+       cat config.ver.toml | grep fa-github
        
-       hugo server --debug --templateMetrics
+       sed -i -r  "s#(^url = \".*/tree)/[0-9a-f]{40}[^\"]*\"#\1/`git rev-parse HEAD`\"#g" config.ver.toml
+       cat config.ver.toml| grep '/tree/'
+       
+       hugo server --debug --templateMetrics --config config.ver.toml
 
     entrypoint: /bin/bash
     volumes:
