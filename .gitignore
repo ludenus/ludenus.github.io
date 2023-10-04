@@ -6,3 +6,5 @@
 *.iml
 
 **/.hugo_build.lock
+
+/public/
