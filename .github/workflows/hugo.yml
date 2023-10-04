@@ -45,6 +45,8 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/pandoc.deb
       - name: Install Dart Sass
         run: sudo snap install dart-sass
+      - name: which git
+        run: which git && git --version || echo "no git"
       - name: Checkout
         uses: actions/checkout@v3
         with:
