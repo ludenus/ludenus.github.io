@@ -133,7 +133,7 @@ weight = 10
 
 [[languages.en.menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> Version 0.0.0"
-url = "https://github.com/ludenus/ludenus.github.io"
+url = "https://github.com/ludenus/ludenus.github.io/tree/0000000000000000000000000000000000000000"
 identifier = "gitVersion"
 weight = 100
 
@@ -155,7 +155,7 @@ weight = 10
 
 [[languages.ua.menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> Версія 0.0.0"
-url = "https://github.com/ludenus/ludenus.github.io"
+url = "https://github.com/ludenus/ludenus.github.io/tree/0000000000000000000000000000000000000000"
 identifier = "gitVersion"
 weight = 100
 
