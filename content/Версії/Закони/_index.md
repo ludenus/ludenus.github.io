@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
 weight = 230
-title = "Юридична і законотворча діяльність"
+title = "Закони"
 showInToc = true
 +++
 

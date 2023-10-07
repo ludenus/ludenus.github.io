@@ -11,7 +11,7 @@ services:
        
        cp -f config.toml config.ver.toml
        
-       sed -i -r "s/(^name = \".*fa-github.*) [0-9]+\.[0-9]+\.[0-9]+[^\"]*\"/\1 `git describe --tags`\"/g" config.ver.toml
+       sed -i -r "s/(^name = \".*fa-github.*) [0-9]+\.[0-9]+\.[0-9]+[^\"]*\"/\1 `git describe --tags --dirty`\"/g" config.ver.toml
        cat config.ver.toml | grep fa-github
        
        sed -i -r  "s#(^url = \".*/tree)/[0-9a-f]{40}[^\"]*\"#\1/`git rev-parse HEAD`\"#g" config.ver.toml

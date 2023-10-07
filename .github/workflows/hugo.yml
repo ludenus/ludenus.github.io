@@ -57,7 +57,7 @@ jobs:
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Set version via git describe
         run: |
-          sed -i -r "s/(^name = \".*fa-github.*) [0-9]+\.[0-9]+\.[0-9]+[^\"]*\"/\1 `git describe --tags`\"/g" config.toml
+          sed -i -r "s/(^name = \".*fa-github.*) [0-9]+\.[0-9]+\.[0-9]+[^\"]*\"/\1 `git describe --tags --dirty`\"/g" config.toml
           cat config.toml | grep fa-github
 
           sed -i -r  "s#(^url = \".*/tree)/[0-9a-f]{40}[^\"]*\"#\1/`git rev-parse HEAD`\"#g" config.toml
