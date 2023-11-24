@@ -4,4 +4,4 @@ title = "~"
 +++
 
 
-{{% children containerstyle="ul" style="li" depth="3" description="false" sort="weight" %}}
+# Використання систем контролю версій для колективної роботи над мультимедійною документацією
