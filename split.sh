@@ -27,14 +27,22 @@ for section_file in section*.md; do
         echo "Processing $section_file"
 
         title=`grep -P '^# '  "$section_file" | sed -r 's/# +//' | sed -r 's/ *$//'`
-        # parse text between h1 and h2 header
-        body=`(cat "$section_file" | grep -Pzo '(?s)^# .*?\n##'  | grep -a -v '^#') || true`
-        if [ -z "$body" ]; then
+
+        if grep -P '^## ' "$section_file"; then
+          # parse text between h1 and h2 header
+          body=`(cat "$section_file" | grep -Pzo '(?s)^# .*?\n##'  | grep -a -v '^#') || true`
+        else
             # if there is no h2 header - get all text available after h1 header
-           body=`(cat "$section_file" | grep -v '^#') || true`
+          body=`(cat "$section_file" | grep -v '^#') || true`
         fi
+
         let "weight+=1"
         echo "title='$title'"
+
+        if [ "$title" = "ЗМІСТ" ]; then
+           echo "patch TOC..."
+           body=`echo "$body" | sed -r 's/ [0-9]+\]/]/g' | sed -r 's/ [0-9]+(\*+\])/\1/g'`
+        fi
 
         mkdir -p "${CONTENT_DIR}/${title}"
         export header=$(cat<<-EOF
@@ -58,7 +66,7 @@ EOF)
                 echo "Processing $section_file : $sub_section_file"
 
                 sub_title=`grep -P '^## '  "$sub_section_file" | sed -r 's/## +//' | sed -r 's/ *$//'`
-                sub_body=`grep -v "$sub_title"  ""$sub_section_file""`
+                sub_body=`grep -v "$sub_title"  "$sub_section_file"`
                 let "weight+=1"
                 mkdir -p "${CONTENT_DIR}/${title}/${sub_title}"
                 export sub_header=$(cat<<-EOF
@@ -78,7 +86,7 @@ EOF)
 
         done
 
-        rm "$section_file"  || true
+#        rm "$section_file"  || true
       fi
 done
 echo ok
