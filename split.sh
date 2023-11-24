@@ -86,7 +86,7 @@ EOF)
 
         done
 
-#        rm "$section_file"  || true
+        rm "$section_file"  || true
       fi
 done
 echo ok
