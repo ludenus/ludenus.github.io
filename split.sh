@@ -10,6 +10,11 @@ export DST_MD_FILE="${SRC_DOCX_FILE}.md"
 export CONTENT_DIR=${CONTENT_DIR:-'./content'}
 
 
+function fix_square_brackets() {
+  cat - |  sed -r 's/\\\[([0-9]+)\\\]/[\1]/g'
+}
+
+
 pandoc --from=docx --to=markdown_strict "${SRC_DOCX_FILE}" > "${DST_MD_FILE}"
 
 
@@ -55,7 +60,7 @@ showInToc = true
 
 EOF)
         echo "$header" > "${CONTENT_DIR}/${title}/_index.md"
-        echo "$body" >> "${CONTENT_DIR}/${title}/_index.md"
+        echo "$body" | fix_square_brackets >> "${CONTENT_DIR}/${title}/_index.md"
         echo "$weight"
 
         # Use awk to split the file into sections based on H2 headers
@@ -79,7 +84,7 @@ showInToc = true
 
 EOF)
                 echo "$sub_header" > "${CONTENT_DIR}/${title}/${sub_title}/_index.md"
-                echo "$sub_body" >> "${CONTENT_DIR}/${title}/${sub_title}/_index.md"
+                echo "$sub_body" | fix_square_brackets >> "${CONTENT_DIR}/${title}/${sub_title}/_index.md"
                 rm "$sub_section_file"  || true
             fi
 

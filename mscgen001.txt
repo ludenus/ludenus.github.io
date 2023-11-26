@@ -1,0 +1,27 @@
+msc {
+
+authors [label="Автори"], gitrepo [label="Git Репозиторій"], github [label="GitHub"], hugo [label="Генератор Hugo"], ghpages [label="GitHub Pages"];
+
+--- [label="[ Автори комітять зміни в свої окреми гілки ]", linecolor="#008000"];
+
+authors=>gitrepo [label="Коміт(и) до власної гілки"];
+
+authors=>gitrepo [label="Пуш до віддаленого репозиторію"];
+
+authors=>github [label="Відкрити запит на злитя"];
+
+--- [label="[ Обробка запитів на злиття (Pull Request) ]", linecolor="#008000"];
+
+github=>github [label="Перегляд PR"];
+
+github=>gitrepo [label="Злиття PR у гілку master"];
+
+--- [label="[ Генерація Hugo та публікація ]", linecolor="#FF0000"];
+
+gitrepo=>hugo [label="Запустити Hugo через GitHub Actions"];
+
+hugo=>ghpages [label="Опублікувати документацію"];
+
+--- [label="[ Нова версія документації доступна онлайн для користувачів ]", linecolor="#FF0000"];
+
+}
