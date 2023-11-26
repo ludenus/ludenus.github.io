@@ -1,7 +1,7 @@
 +++
-archetype = "home"
-title = "~"
+archetype = "chapter"
+title = ""
+weight = 15
+showInToc = true
 +++
 
-
-# Використання систем контролю версій для колективної роботи над мультимедійною документацією

@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
 title = "Розділ 2"
-weight = 14
+weight = 5
 showInToc = true
 +++
 

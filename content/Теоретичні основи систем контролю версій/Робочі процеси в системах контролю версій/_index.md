@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
 title = "Робочі процеси в системах контролю версій"
-weight = 24
+weight = 20
 showInToc = true
 +++
 

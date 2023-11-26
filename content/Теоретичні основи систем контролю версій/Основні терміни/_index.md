@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
 title = "Основні терміни"
-weight = 21
+weight = 17
 showInToc = true
 +++
 
@@ -22,7 +22,7 @@ showInToc = true
     функція є надзвичайно важливою для розуміння конкретних змін,
     зроблених в кожній ітерації файлу [33].
 
-<img src="media/image7.png" style="width:6.88976in;height:2.98611in" />
+<img src="media/image10.png" style="width:6.88976in;height:2.98611in" />
 
 Рисунок 3.1 – Відображення різниці між версіями файл у GitHub [45]
 
@@ -38,7 +38,7 @@ showInToc = true
     який дозволяє відрізняти одну версію від іншої і відстежувати зміни
     між ними. Це схоже на знімок вашого проекту в певний момент [19].
 
-<img src="media/image4.png" style="width:6.88976in;height:5.44444in" />
+<img src="media/image12.png" style="width:6.88976in;height:5.44444in" />
 
 Рисунок 3.2 – Список комітів в GitHub [45]
 
@@ -47,7 +47,7 @@ showInToc = true
     використовуються для версіювання, дозволяючи легший доступ до певних
     версій програмного коду або документації [30].
 
-[<img src="media/image5.png" style="width:6.12512in;height:3.0116in" />](https://github.com/ludenus/uad-multimedia-doc/blob/master/img/uad-multimedia-doc-0050-release.png)
+[<img src="media/image14.png" style="width:6.12512in;height:3.0116in" />](https://github.com/ludenus/uad-multimedia-doc/blob/master/img/uad-multimedia-doc-0050-release.png)
 
 Рисунок 3.3 – Створення нового тегу в GitHub [45]
 
@@ -60,11 +60,11 @@ showInToc = true
     концепція є вкрай важливою для підтримки паралельної розробки серед
     декількох членів команди [43].
 
-<img src="media/image2.png" style="width:6.12512in;height:3.33592in" />
+<img src="media/image9.png" style="width:6.12512in;height:3.33592in" />
 
 Рисунок 3.4 – Основна гілка розробки в GitHub [45]
 
-<img src="media/image1.png" style="width:6.88976in;height:2.875in" />
+<img src="media/image8.png" style="width:6.88976in;height:2.875in" />
 
 Рисунок 3.5 – Створення нової гілки в GitHub [45]
 
@@ -73,24 +73,24 @@ showInToc = true
     призводити до конфліктів, які потребують вирішення [19].
 
 -   **Запит на злиття (pull request, merge request)**: Запит на злиття
-    (або запит на об'єднання в деяких системах) є способом внесення змін
+    (або запит на об’єднання в деяких системах) є способом внесення змін
     до основної гілки проекту. Він сповіщає членів команди, що окремий
-    користувач завершив свій набір змін і просить об'єднати ці зміни з
+    користувач завершив свій набір змін і просить об’єднати ці зміни з
     основною гілкою [40].
 
-<img src="media/image8.png" style="width:6.88976in;height:2.43056in" />
+<img src="media/image11.png" style="width:6.88976in;height:2.43056in" />
 
 > Рисунок 3.6 – Створення запиту на злиття в GitHub [45]
 >
 > Зазвичай запит на злиття застосовується, коли над проектом працює
 > декілька людей. Типово заохочує інших учасників проекту робити
-> перегляд змін і надавати зворотній зв'язок автору. Запит на злиття
+> перегляд змін і надавати зворотній зв’язок автору. Запит на злиття
 > може бути прийнято (бранч користувача буде злитий з основною гілкою),
 > відхилено (пропоновані зміни однозначно небажані з точки зору інших
 > співавторів), або відмічено для подальшого обговорення і вдосконалення
 > запропонованих змін.
 
-<img src="media/image9.png" style="width:6.88976in;height:6.11111in" />  
+<img src="media/image15.png" style="width:6.88976in;height:6.11111in" />  
 Рисунок 3.7 – Перегляд запиту на злиття в GitHub [45]
 
 -   **Конфлікт зливання (merge conflict)**: В контексті систем контролю
@@ -101,15 +101,15 @@ showInToc = true
     над кодом і є критичним аспектом спільної роботи в розподілених
     системах контролю версій [44].
 
-> <img src="media/image6.png" style="width:6.13554in;height:1.66152in" />
+<img src="media/image16.png" style="width:6.13554in;height:1.66152in" />
 
 Рисунок 3.9 – Конфлікт, виявлений при порівнянні гілок в GitHub [45]
 
-> <img src="media/image10.png" style="width:6.0244in;height:2.41523in" />
+<img src="media/image20.png" style="width:6.0244in;height:2.41523in" />
 
 Рисунок 3.9 – Файли, зміни в яких спричиняють конфлікт в GitHub [45]
 
-<img src="media/image3.png" style="width:6.19804in;height:1.88473in" />  
+<img src="media/image19.png" style="width:6.19804in;height:1.88473in" />  
 Рисунок 3.10 – Ручне редагування для вирішення конфлікту злиття в GitHub
 [45]
 
